@@ -10,30 +10,30 @@
 
 <body>
     <div class="main">
-            <div class="child">
-                <h1 class="text">Home</h1>
-                <div class="backgroundScore">
-                    <h1 class="scoreText">0</h1>
-                </div>
-                <div class="counterButton">
-                    <button class="counterBox">+1</button>
-                    <button class="counterBox">+2</button>
-                    <button class="counterBox">+3</button>
-                </div>
+        <div class="child">
+            <h1 class="text">Home</h1>
+            <div class="backgroundScore">
+                <h1 class="scoreText">0</h1>
             </div>
-            <div class="child">
-                <h1 class="text">GUEST</h1>
-                <div class="backgroundScore">
-                    <h1 class="scoreText">0</h1>
-                </div>
-                <div class="counterButton">
-                    <button class="counterBox">+1</button>
-                    <button class="counterBox">+2</button>
-                    <button class="counterBox">+3</button>
-                </div>
+            <div class="counterButton">
+                <button class="counterBox" onclick="counter.clickOne()">+1</button>
+                <button class="counterBox" onclick="counter.clickTwo()">+2</button>
+                <button class="counterBox" onclick="counter.clickThree()">+3</button>
             </div>
         </div>
-        <script src="script.js"></script>
+        <div class="child">
+            <h1 class="text">GUEST</h1>
+            <div class="backgroundScore">
+                <h1 class="guestscore">0</h1>
+            </div>
+            <div class="counterButton">
+                <button class="counterBox" onclick="counter.guestOne()">+1</button>
+                <button class="counterBox" onclick="counter.guestTwo()">+2</button>
+                <button class="counterBox" onclick="counter.guestThree()">+3</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
